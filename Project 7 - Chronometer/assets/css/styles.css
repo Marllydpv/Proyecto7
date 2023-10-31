@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Console';
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vW;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.screen{
+    user-select: none;
+}
+
+.screen .chronometer{
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 8px 5px gray;
+    border: none;
+
+}
+
+.screen .chronometer span{
+    width: 60px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 550;
+    color: white;
+}
+
+.chronometer span.separator,
+.chronometer span.separatorMiliSeconds
+{
+    width:30px;
+    margin-bottom: 7px;
+}
+
+.screen .chronometer span.separatorMiliSeconds,
+.screen .chronometer span.miliseconds{
+    color: orange;
+}
+
+.screen .buttons{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.buttons button{
+    padding: 6px 16px;
+    outline: none;
+    border: none;
+    margin: 0px 10px;
+    color: white;
+    background: rgb(55, 55, 55);
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 0.9rem;
+    cursor: pointer;
+    box-shadow: 3px 4px 3px 0px rgb(75, 75, 75);
+}
+
+.buttons button.on{
+    pointer-events: none;
+    opacity: 0.7;
+}
